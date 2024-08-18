@@ -8,11 +8,14 @@ function run() {
   outer.contentWindow.eval(js);
 }
 
-var editor = CodeMirror.fromTextArea(document.getElementById("htmlcode"), {
-  lineNumbers: true,
-  mode: "text/html",
-  matchBrackets: true
-});
+
+  
+  var editor = CodeMirror.fromTextArea(document.getElementsByName("html"), {
+    lineNumbers: true,
+    mode: "text/html",
+    matchBrackets: true
+  });
+
 
 
 function downloadFile() {

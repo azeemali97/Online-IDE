@@ -52,6 +52,7 @@ iframe {
   color: white;
   font-size: 1rem;
   border-radius: 10px;
+  padding: 2px;
 }
 .css textarea {
   height: 130px;
@@ -60,6 +61,7 @@ iframe {
   color: white;
   font-size: 1rem;
   border-radius: 10px;
+  padding: 2px;
 }
 .js textarea {
   height: 130px;
@@ -68,6 +70,7 @@ iframe {
   color: white;
   font-size: 1rem;
   border-radius: 10px;
+  padding: 2px;
 }
 .html,
 .js,
