@@ -89,6 +89,7 @@ iframe {
   font-size: 18px;
   border-radius: 10px;
   &:hover {
-    background-color: green;
+    background-color: rgb(32, 32, 32);
+    color: white;
   }
 }

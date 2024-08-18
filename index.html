@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online IDE</title>
-  
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.css">
-    <link rel="icon" href=
-"asset/favicon.png" 
-          type="image/x-icon">
-</head>
-<body>
-    <nav><img src="asset/logo.png" alt="" class="logo">
-    <ul>
-      
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.css"
+    />
+    <link rel="icon" href="asset/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <img src="asset/logo.png" alt="" class="logo" />
+      <ul>
         <button id="btn-download" onclick=" downloadFile()">Download</button>
-    </ul>
+      </ul>
     </nav>
     <main>
-        <div class="editor">
-          
-            <div class="html">
-                <label>HTML</label>
-                <textarea name="html" id="htmlcode" onkeyup="run()">
-                </textarea>
-            </div>
-            <div class="css">
-                <label>CSS</label>
-                <textarea name="css" id="csscode" onkeyup="run()">
-                </textarea>
-            </div>
-            <div class="js">
-                <label>Javascript</label>
-                <textarea name="js" id="jscode" onkeyup="run()"></textarea>
-            </div>
+      <div class="editor">
+        <div class="html">
+          <label>HTML</label>
+          <textarea name="html" id="htmlcode" onkeyup="run()"></textarea>
         </div>
-        <iframe id="outer"  ></iframe>
+        <div class="css">
+          <label>CSS</label>
+          <textarea name="css" id="csscode" onkeyup="run()"></textarea>
+        </div>
+        <div class="js">
+          <label>Javascript</label>
+          <textarea name="js" id="jscode" onkeyup="run()"></textarea>
+        </div>
+      </div>
+      <iframe id="outer"></iframe>
     </main>
     <script src="main.js"></script>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/xml/xml.min.js"></script>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/xml/xml.min.js"></script>
+  </body>
 </html>
